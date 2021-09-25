@@ -1,0 +1,62 @@
+@import '../../styles/main.scss';
+
+.borad-width {
+  min-width: 300px;
+}
+@media (max-width: 1024px) {
+  .borad-width {
+    min-width: 270px;
+  }
+}
+.khFUIq {
+  background-color: $card-bg !important;
+}
+
+.rounded-xl {
+  border-radius: 1.5rem !important;
+}
+
+.react-kanban-column {
+  border-radius: 15px !important;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  @media (max-width: 650px) {
+    margin-right: 0;
+  }
+}
+
+.react-kanban-card-adder-form {
+  max-width: 100% !important;
+  min-width: 100% !important;
+  border-radius: 1rem !important;
+  padding: 15px !important;
+}
+
+.kanbad-modal-overlay {
+  position: absolute !important;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 0 !important;
+  border-radius: 1rem !important;
+}
+
+.MuiDialog-paper {
+  border-radius: 1.5rem !important;
+}
+
+.react-kanban-board > div:first-child {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-right: -15px;
+  margin-left: -15px;
+  overflow-x: hidden;
+  @media (max-width: 650px) {
+    justify-content: center;
+    margin: 0;
+  }
+}

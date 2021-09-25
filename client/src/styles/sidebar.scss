@@ -1,0 +1,35 @@
+$breakpoint-mobile: 570px;
+
+.sidebar-toggle-show {
+  width: 80px;
+  transition: all 0.3s ease;
+  position: sticky;
+  top: 0;
+}
+
+.sidebar-toggle-hide {
+  width: 0;
+  padding: 0;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: $breakpoint-mobile) {
+  .sidebar-toggle-show {
+    position: fixed;
+    z-index: 8888;
+    background-color: var(--color-primary-light);
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease;
+  }
+  .sidebar-toggle-show ul {
+    width: 80px;
+    height: 100%;
+    background-color: var(--color-white);
+  }
+
+  .sidebar-toggle-hide {
+    position: absolute;
+  }
+}

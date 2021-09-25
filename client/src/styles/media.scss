@@ -1,0 +1,14 @@
+@media (min-width: 2000px) {
+  .custom-container-xxl {
+    max-width: 1710px;
+    width: 1710px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px #3446aa85;
+  }
+}
+
+@media (max-width: 1000px) {
+  .MuiDialog-paper {
+    border-radius: unset !important;
+  }
+}

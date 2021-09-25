@@ -1,0 +1,45 @@
+/* make the customizations */
+$theme-colors: (
+  'primary': #3446aa,
+  'secondary': #820db1,
+  'info': #fcbb57,
+  'danger': #ee4343,
+  'warning': #eec843,
+  'success': #43eea6,
+  'light': #f4f4f4,
+  'dark': #363c56,
+);
+:root {
+  --color-primary: #3446aa;
+  --color-primary-light: #3547ac80;
+  --color-success: #43eea6;
+  --color-danger: #ee4343;
+  --color-white: #fff;
+  --color-grey-light: #d3d6e6;
+  --color-very-light: #f4f4f4;
+}
+
+.bg-overlay-primary {
+  background: linear-gradient(
+    90deg,
+    var(--color-white) 50%,
+    var(--color-primary) 50%
+  );
+}
+
+.nav-link {
+  color: var(--color-grey-light);
+}
+
+.nav-link.active,
+a.active {
+  color: var(--color-primary);
+}
+
+.MuiInput-underline:before {
+  border-color: var(--color-grey-light) !important;
+}
+
+.MuiNativeSelect-icon {
+  color: var(--color-grey-light) !important;
+}
